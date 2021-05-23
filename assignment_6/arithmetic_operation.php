@@ -10,9 +10,9 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script>
         function sum() {
-            var txtFirstNumberValue = document.getElementById('input_1').value;
-            var txtSecondNumberValue = document.getElementById('input_2').value;
-            var result = parseInt(txtFirstNumberValue) + parseInt(txtSecondNumberValue);
+            var input_1_value = document.getElementById('input_1').value;
+            var input_2_value = document.getElementById('input_2').value;
+            var result = parseInt(input_1_value) + parseInt(input_2_value);
             if (!isNaN(result)) {
                 document.getElementById('sum').value = result;
             }
