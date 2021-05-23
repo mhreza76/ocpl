@@ -32,9 +32,9 @@
 
             <div class="card-body">
                 <label><b>1st Number: </b></label>
-                <input type="text" id="input_1" onkeyup="sum();"/>&nbsp;&nbsp;
+                <input type="text" id="input_1" onkeyup="sum()"/>&emsp;&emsp;&emsp;
                 <label><b>2nd Number: </b></label>
-                <input type="text" id="input_2" onkeyup="sum();"/>&nbsp;&nbsp;
+                <input type="text" id="input_2" onkeyup="sum()"/>&emsp;&emsp;&emsp;
                 <label><b>Sum: </b></label>
                 <input type="text" id="sum" disabled/>
             </div>
