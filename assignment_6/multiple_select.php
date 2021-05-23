@@ -38,6 +38,7 @@
                         <option value="football">Football</option>
                         <option value="badminton">Badminton</option>
                         <option value="cricket">Cricket</option>
+                        <option value="running">Running</option>
                     </optgroup>
                 </select>
                 <br><br>
@@ -51,6 +52,7 @@
                         <option value="football">Football</option>
                         <option value="badminton">Badminton</option>
                         <option value="cricket">Cricket</option>
+                        <option value="running">Running</option>
                     </optgroup>
                 </select>
             </div>
