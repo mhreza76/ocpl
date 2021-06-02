@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="margin-top: 40px;">
+    <div class="panel panel-info">
+        <div class="panel-body" style="padding: 60px;">
+
+            <button class="btn btn-success ajaxCall"> Call Ajax & Show Data </button>
+            <button class="btn btn-primary clearData"> Clear Data </button>
+
+            <div id="responseDiv" style="margin-top: 20px;height: 100px;width: 400px;background-color: #d7dee4; border-radius: 5px; padding-left: 5px;">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footerArea" style="position: absolute;bottom: 10px;border: 3px solid #8AC007;">
+    <img src="https://batworld.com/wp-content/themes/batworld/images/batworld-logo.x31866.png" style="height: 50px;">
+</div>
+
+</body>
+
+<script>
+
+    $(document).ready(function() {
+
+        $(document).on('click','.ajaxCall',function () {
+
+            $.ajax({
+                url: 'https://mocki.io/v1/13f3de60-6793-497a-a311-9638f710a6a8',
+                type: "GET",
+                dataType: 'json',
+                headers: {
+                  //
+                },
+                data: {
+                   //
+                },
+                success: function (response) {
+                    if (response.status == 200){
+                        document.getElementById("responseDiv").innerHTML = '';
+                        var data = JSON.parse(JSON.stringify(response.data));
+                        data.forEach(function(element){
+                            console.log(element);
+                            document.getElementById("responseDiv").innerHTML += element.id + ":" + element.name + "<br>";
+                        });
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(errorThrown);
+                },
+                beforeSend: function (xhr) {
+
+                }
+            });
+
+        })
+
+
+
+        $(document).on('click','.clearData',function () {
+            document.getElementById("responseDiv").innerHTML = '';
+        })
+
+    })
+</script>
+</html>
