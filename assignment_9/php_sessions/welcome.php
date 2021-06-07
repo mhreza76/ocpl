@@ -13,6 +13,6 @@ if(isset($_SESSION['username'])){
         echo "<script> location.href='welcome.php'</script>";
     }else{
         echo "<script>alert('username or password incorrect!')</script>";
-        echo "<script> location.href='login.php'</script>";
+        echo "<script> location.href='index.php'</script>";
     }
 }

@@ -27,7 +27,7 @@
         <object data="https://dev-bscic.oss.net.bd/certificate/2021/05/certificate_60ad12e7b44001.15002877.pdf" width="70%" height="400px"></object>
     </div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-        <object data="./sample_pdf3.pdf" width="70%" height="400px"></object>
+        <object data="sample_pdf3.pdf" width="70%" height="400px"></object>
 
     </div>
 </div>
@@ -51,6 +51,6 @@ if (isset($_SESSION['username'])) {
     echo "<br><a href='welcome.php'><input type='button' value='back' name='back'</a>";
 } else {
 
-    echo "<script> location.href='login.php'</script>";
+    echo "<script> location.href='index.php'</script>";
 }
 ?>
