@@ -1,0 +1,14 @@
+
+
+Laravel Version 6.20
+
+Server Requirements:
+
+	PHP >= 7.2.5
+
+
+1. Run composer install command
+
+2. update your local DB credential into the .env file
+
+3. Import test_app.sql in your DB
