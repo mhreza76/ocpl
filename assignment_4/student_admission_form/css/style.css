@@ -1,0 +1,16 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    font-family: "JetBrains Mono";
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+
+
+.grad{
+    background-image: linear-gradient(deepskyblue, lightblue)!important;
+}
